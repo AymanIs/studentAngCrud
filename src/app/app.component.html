@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="row mt-10">
+    <div class="header flex justify-around text-center">
+      <h3 class="py-4 font-bold text-3xl">StudentPort</h3>
+      <button
+       (click)="openModel()"
+        class="py-4 px-10 rounded font-bold text-xl hover:bg-purple-500 duration-300 bg-purple-300"
+      >
+        Add student
+      </button>
+    </div>
+    <div class="row 4/4  flex mt-10">
+      <div class="card p-10 mx-auto w-1/4 bg-purple-200 rounded ">
+        <div class="cardHeader flex justify-between font-bold text-xl mb-5">
+
+         <span>Student Name</span> 
+         <span>Mobile Number</span> 
+        </div>
+        
+        <div class="cardBody font-bold">
+          <p>Email : </p>
+          <p>city  , codePostal , state: </p>
+          <p>adress : </p>
+        </div>
+      </div>
+
+     
+
+    
+  </div>
+  <div class="model w-3/5 mx-auto border-1 bg-slate-500 py-5 px-10 hidden" id="myModel" >
+    <div class="header flex justify-between py-5">
+      <span class="font-bold text-xl ">Create New Model</span>
+      <img src=".\assets\cross_87251.png" alt="crossLogo" width="20" class="cursor-pointer" (click)="closeModel()">
+    </div><hr/>
+    <div class="modelBody my-10">
+      <p>Model body</p>
+    </div><hr/>
+    <div class="modelFooter py-5 mb-5">
+      <button class="float-right bg-red-400 py-2 px-4 rounded font-bold">
+        close
+      </button>
+    </div>
+  </div>
+</div>
